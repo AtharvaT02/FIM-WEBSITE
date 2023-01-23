@@ -290,3 +290,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+// form hide on clicking close button
+
+
+function closeForm() {
+  document.getElementsByClassName("screen").style.display = "none";
+}
+
+//set onlcick event on button
+document.getElementById("closeButton").onclick = function() {
+  document.getElementById("backgroundID").style.display = "none";  
+}
+
+
