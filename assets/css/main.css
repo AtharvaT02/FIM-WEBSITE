@@ -189,6 +189,22 @@ section {
   bottom: 15px;
 }
 
+#admission-form-button {
+  top: 320px;
+  width: 200px;
+  position: fixed;
+  right: -80px;
+  z-index: 1000;
+  transform: rotate(-90deg);
+  padding: 10px 25px 35px;
+  height: 0px;
+  background-color: #3E3E3E;
+  color: #fff;
+  z-index: 1000;
+  font-size: 0.8em;
+  border: none;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -214,6 +230,36 @@ section {
   -webkit-animation: animate-preloader 1.5s linear infinite;
   animation: animate-preloader 1.5s linear infinite;
 }
+
+#phone-whatsapp-block {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background-color: #fff;
+      padding: 10px;
+      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 0 10px 0 0;
+      z-index: 9999;
+      background-color: #3E3E3E;
+    }
+    
+    .phone-whatsapp-icon {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #00ff00;
+    }
+    
+    .phone-whatsapp-icon:hover {
+      color: #00ff00;
+      cursor: pointer;
+    }
+
+    .phone{
+      rotate: 90deg;
+    }
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -242,6 +288,41 @@ section {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  #admission-form-button {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg);
+    width: 100%;
+    text-align: center;
+		}
+
+    #phone-whatsapp-block {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background-color: #fff;
+      padding: 10px;
+      
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 9999;
+      background-color: #3E3E3E;
+    }
+    
+    .phone-whatsapp-icon {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #00ff00;
+    }
+    
+    .phone-whatsapp-icon:hover {
+      color: #00ff00;
+      cursor: pointer;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -2731,6 +2812,11 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
+  position: fixed;
+}
+
+.background_hide {
+  display: none;
 }
 
 .containerForm {

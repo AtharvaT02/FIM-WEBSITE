@@ -295,13 +295,23 @@ document.addEventListener('DOMContentLoaded', () => {
 // form hide on clicking close button
 
 
-function closeForm() {
-  document.getElementsByClassName("screen").style.display = "none";
-}
 
 //set onlcick event on button
 document.getElementById("closeButton").onclick = function() {
-  document.getElementById("backgroundID").style.display = "none";  
+  document.getElementById("backgroundID").classList.remove("background");
+  document.getElementById("backgroundID").classList.add("background_hide");
 }
 
 
+document.getElementById("admission-form-button").onclick = function() {
+    //change class name to show the form
+    if(document.getElementById("backgroundID").classList.contains("background_hide")) {
+        document.getElementById("backgroundID").classList.remove("background_hide");
+        document.getElementById("backgroundID").classList.add("background");
+    }
+    //change class name to hide the form
+    else {      
+        document.getElementById("backgroundID").classList.remove("background");
+        document.getElementById("backgroundID").classList.add("background_hide");
+    }
+}
